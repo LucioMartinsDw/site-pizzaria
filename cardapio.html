@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/cardapio.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <title>Cardápio</title>
+    <link rel="shortcut icon" href="assets/iconePizza.png" type="image/x-icon">
+</head>
+
+<body>
+    <!--menu de navegação-->
+    <header class="nav">
+        <div class="logo-image">
+            <img src="./assets/logo.svg" alt="logotipo">
+        </div>
+        <div class="nav-link">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="quemsomos.html">Quem somos</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2 class="titulo-cardapio">Cardápio</h2>
+        <section class="pizzasSalgadas">
+            <div class="pizza-card">
+                <img src="./assets/pepperoni.jpg" alt="Pizza de pepperoni" class="pizza-image">
+                <div class="pizza-detalhes">
+                    <div class="pizza-preco-conteiner">
+                        <div class="pizza-preco">
+                            <h4>Média</h4>
+                            <h3>R$ 50,00</h3>
+                        </div>
+                        <div class="pizza-preco">
+                            <h4>Grande</h4>
+                            <h3>R$ 60,00</h3>
+                        </div>
+                    </div>
+                    <div class="pizza-nome">
+                        <h2>Pepperoni</h2>
+                        <p>Queijo muçarela, pepperoni, pimenta vermelha, orégano e azeitona preta.</p>
+                    </div>
+                    <div class="coracao-container">
+                        <img id="deslike-pepperoni" class="coracao" src="./assets/heart (1).png" alt="coração" onclick="trocarImagem(this, 'deslike-pepperoni', 'like-pepperoni')">
+                        <img id="like-pepperoni" class="coracao inativo" src="./assets/heart (2).png" alt="coração" onclick="trocarImagem(this, 'deslike-pepperoni', 'like-pepperoni')">
+                      </div>
+                </div>
+            </div>
+
+            <div class="pizza-card">
+                <img src="./assets/cogumelo.jpg" alt="Pizza de cogumelo" class="pizza-image">
+                <div class="pizza-detalhes">
+                    <div class="pizza-preco-conteiner">
+                        <div class="pizza-preco">
+                            <h4>Média</h4>
+                            <h3>R$ 60,00</h3>
+                        </div>
+                        <div class="pizza-preco">
+                            <h4>Grande</h4>
+                            <h3>R$ 70,00</h3>
+                        </div>
+                    </div>
+                    <div class="pizza-nome">
+                        <h2>Cogumelos</h2>
+                        <p>Queijo muçarela, tomate, abobrinha, cogumelos, pimentão e orégano.</p>
+                    </div>
+                    <div class="coracao-container">
+                        <img id="deslike-cogumelos" class="coracao" src="./assets/heart (1).png" alt="coração" onclick="trocarImagem(this, 'deslike-cogumelos', 'like-cogumelos')">
+                        <img id="like-cogumelos" class="coracao inativo" src="./assets/heart (2).png" alt="coração" onclick="trocarImagem(this, 'deslike-cogumelos', 'like-cogumelos')">
+                      </div>
+                </div>
+            </div>
+
+            <div class="pizza-card">
+                <img src="./assets/napolitana.jpg" alt="Pizza napolitana" class="pizza-image">
+                <div class="pizza-detalhes">
+                    <div class="pizza-preco-conteiner">
+                        <div class="pizza-preco">
+                            <h4>Média</h4>
+                            <h3>R$ 30,00</h3>
+                        </div>
+                        <div class="pizza-preco">
+                            <h4>Grande</h4>
+                            <h3>R$ 40,00</h3>
+                        </div>
+                    </div>
+                    <div class="pizza-nome">
+                        <h2>Napolitana</h2>
+                        <p>Queijo muçarela, tomate e orégano.</p>
+                    </div>
+                    <div class="coracao-container">
+                        <img id="deslike-napolitana" class="coracao" src="./assets/heart (1).png" alt="coração" onclick="trocarImagem(this, 'deslike-napolitana', 'like-napolitana')">
+                        <img id="like-napolitana" class="coracao inativo" src="./assets/heart (2).png" alt="coração" onclick="trocarImagem(this, 'deslike-napolitana', 'like-napolitana')">
+                      </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="pizzasDoces">
+            <div class="pizza-card">
+                <img src="./assets/morango.png" alt="Pizza de morangopera" class="pizza-image">
+                <div class="pizza-detalhes">
+                    <div class="pizza-preco-conteiner">
+                        <div class="pizza-preco">
+                            <h4>Média</h4>
+                            <h3>R$ 70,00</h3>
+                        </div>
+                        <div class="pizza-preco">
+                            <h4>Grande</h4>
+                            <h3>R$ 80,00</h3>
+                        </div>
+                    </div>
+                    <div class="pizza-nome">
+                        <h2>Morango</h2>
+                        <p>Chocolate ao leite, morango e leite condensado.</p>
+                    </div>
+                    <div class="coracao-container">
+                        <img id="deslike-morango" class="coracao" src="./assets/heart (1).png" alt="coração" onclick="trocarImagem(this, 'deslike-morango', 'like-morango')">
+                        <img id="like-morango" class="coracao inativo" src="./assets/heart (2).png" alt="coração" onclick="trocarImagem(this, 'deslike-morango', 'like-morango')">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza-card">
+                <img src="./assets/pera.png" alt="Pizza de pera" class="pizza-image">
+                <div class="pizza-detalhes">
+                    <div class="pizza-preco-conteiner">
+                        <div class="pizza-preco">
+                            <h4>Média</h4>
+                            <h3>R$ 50,00</h3>
+                        </div>
+                        <div class="pizza-preco">
+                            <h4>Grande</h4>
+                            <h3>R$ 60,00</h3>
+                        </div>
+                    </div>
+                    <div class="pizza-nome">
+                        <h2>Pera</h2>
+                        <p>Pera, chocolate ao leite e nozes.</p>
+                    </div>
+                    <div class="coracao-container">
+                        <img id="deslike-pera" class="coracao" src="./assets/heart (1).png" alt="coração" onclick="trocarImagem(this, 'deslike-pera', 'like-pera')">
+                        <img id="like-pera" class="coracao inativo" src="./assets/heart (2).png" alt="coração" onclick="trocarImagem(this, 'deslike-pera', 'like-pera')">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza-card">
+                <img src="./assets/california.png" alt="Pizza de frutas" class="pizza-image">
+                <div class="pizza-detalhes">
+                    <div class="pizza-preco-conteiner">
+                        <div class="pizza-preco">
+                            <h4>Média</h4>
+                            <h3>R$ 40,00</h3>
+                        </div>
+                        <div class="pizza-preco">
+                            <h4>Grande</h4>
+                            <h3>R$ 50,00</h3>
+                        </div>
+                    </div>
+                    <div class="pizza-nome">
+                        <h2>Califórnia</h2>
+                        <p>Chocolate branco, morango, mirtilo, pessêgo, manga, kiwi e uva</p>
+                    </div>
+                    <div class="coracao-container">
+                        <img id="deslike-california" class="coracao" src="./assets/heart (1).png" alt="coração" onclick="trocarImagem(this, 'deslike-california', 'like-california')">
+                        <img id="like-california" class="coracao inativo" src="./assets/heart (2).png" alt="coração" onclick="trocarImagem(this, 'deslike-california', 'like-california')">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--rodapé-->
+    <footer>
+        <p>2023 Pizzaria Manjericão ® </p>
+    </footer>
+    <script src="./JavaScript/scriptcardapio.js"></script>
+</body>
+
+</html>
